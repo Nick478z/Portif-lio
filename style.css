@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'tektur';
+}
+
+h1{
+    color: aqua;
+}
+
+body{ 
+    width: 100%;
+    background: linear-gradient( to right, #2e2e49 70%, #8f8eae 0%);
+   
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1000;
+    align-items: center;
+    background-color: rgba(0, 0, 0,.2);
+    justify-content: space-between ;
+    padding: 10px;
+}
+
+header ul{
+    text-align: center;
+}
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    font-weight: 500;
+    font-size: 22px;
+    margin-left: 18px;
+    margin-right: 21px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header a:hover{
+    color: aqua;
+}
+
+.page1{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+    color: white;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.persona{
+    width: 360px;
+    border-radius: 40px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.msg{
+    display: block;
+    font-size: 70px;
+    white-space: nowrap;
+    color: aqua;
+    overflow: hidden;
+    border-right: solid 4px white;
+    width: 0;
+    animation: mark 1s step-end infinite, write 3s steps(22, end) forwards;
+}
+
+.secao2{
+    min-height: 100vh;
+    background-color: rgb(55, 54, 100);
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.page2{
+    color: white;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px ;
+    gap: 45px;
+}
+
+
+.page2 img{
+    width: 250px;
+    border-radius: 12px;
+}
+
+
+h2{
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    scroll-margin-top: 60px; 
+}
+
+.secao3{
+    min-height: 100vh;
+    background-color: rgb(62, 63, 128);
+}
+
+.page3{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+   
+}
+
+.page3 img{
+    width: 320px;
+    height: 200px;
+    border-radius: 12px;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+
+.page3 img:hover{
+    width: 340px;
+    height: 210px;
+    border-color: white;
+}
+
+.secao3 p{
+    color: white;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 350;
+    margin: 20px;
+}
+
+@media (max-width: 1160px) {
+    .persona{
+        width: 300px;
+    }
+}
+
+@keyframes mark{
+    50%{
+        border-right-color: transparent ;
+    }
+}
+
+@keyframes write {
+    from {
+      width: 0; /* Começa com largura zero */
+    }
+    to {
+      width: 10.5ch; 
+    }
+  }
+
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
