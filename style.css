@@ -156,10 +156,61 @@ h2{
     margin: 20px;
 }
 
-@media (max-width: 1160px) {
-    .persona{
-        width: 300px;
+@media (max-width: 780px) {
+
+    header{
+        display: none;
     }
+
+    p{
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .persona{
+        width: 240px;
+    }
+    
+    .msg{
+        font-size: 30px;
+    }
+
+    .page1{
+        font-size: 17px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page2{
+        display: grid;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .page2 img{
+        display: block;
+        margin: auto;
+        width: 190px;
+    }
+
+    .page3 img{
+        width: 250px;
+        height: 170px;
+        border-radius: 12px;
+        transition: 0.5s;
+        border: 2px solid transparent;
+    }
+
+    .page3{
+        display: grid;
+    }
+
+    .secao3 p{
+        font-size: 20px;
+    }
+
 }
 
 @keyframes mark{
@@ -170,7 +221,7 @@ h2{
 
 @keyframes write {
     from {
-      width: 0; /* Começa com largura zero */
+      width: 0; 
     }
     to {
       width: 10.5ch; 
