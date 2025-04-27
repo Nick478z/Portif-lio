@@ -105,7 +105,8 @@ header a:hover{
 
 .page2 img{
     width: 200px;
-    border-radius: 12px;
+    border-radius: 100px;
+    border: 2px solid rgb(132, 115, 179);
     margin: 30px;
 }
 
