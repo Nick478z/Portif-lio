@@ -172,7 +172,7 @@ footer{
 
     p{
         margin: 20px;
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .persona{
@@ -180,12 +180,13 @@ footer{
     }
     
     .msg{
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .page1{
         font-size: 17px;
-        display: grid;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
