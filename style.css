@@ -172,15 +172,17 @@ footer{
 
     p{
         margin: 20px;
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .persona{
         width: 240px;
+        margin: 20px;
     }
     
     .msg{
-        font-size: 45px;
+        font-size: 37px;
+        text-align: center;
     }
 
     .page1{
@@ -190,7 +192,7 @@ footer{
         justify-content: center;
         align-items: center;
         text-align: center;
-        min-height: 90vh;
+        min-height: 100vh;
     }
 
     .page2{
