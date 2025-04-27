@@ -91,25 +91,23 @@ header a:hover{
     background-color: rgb(55, 54, 100);
     width: 100%;
     justify-content: center;
-    
 }
 
 .page2{
     color: white;
     display: flex;
-    font-size: 25px;
     justify-content: center;
     align-items: center;
     margin-top: 130px ;
-    gap: 45px;
+    font-size: 27px;
 }
 
 
 .page2 img{
-    width: 250px;
+    width: 200px;
     border-radius: 12px;
+    margin: 30px;
 }
-
 
 h2{
     padding: 5px;
@@ -170,6 +168,10 @@ footer{
         display: none;
     }
 
+    body{
+        background: linear-gradient( to right, #2e2e49 100%, #8f8eae 0%);
+    }
+
     p{
         margin: 20px;
         font-size: 19px;
@@ -202,9 +204,8 @@ footer{
     }
 
     .page2 img{
-        display: block;
         margin: auto;
-        width: 190px;
+        width: 200px;
     }
 
     .page3 img{
@@ -252,6 +253,7 @@ footer{
 
 
 @keyframes float {
+
     0%, 100%{
         transform: translateY(0);
     }
